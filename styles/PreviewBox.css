@@ -1,0 +1,27 @@
+.itineraryPreview {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}   
+
+.itineraryPreview__block {
+    background-color: #90a4ae;
+    width: 25%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-family: sans-serif;
+    height: 300px;
+    position: relative;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.saveButton {
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+}

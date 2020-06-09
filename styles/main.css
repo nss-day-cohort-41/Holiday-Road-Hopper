@@ -1,0 +1,30 @@
+@import "Banner.css";
+@import "Dropdown.css";
+@import "PreviewBox.css";
+@import "SavedAside.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px black dashed;
+}
+
+.underBanner {
+    display: flex;
+    flex-direction: row;
+    border: 1px black dashed;
+}
+
+.underBanner__left {
+    display: flex;
+    flex-direction: column;
+    flex: 3.5;
+    align-items: center;
+    border: 1px black dashed;
+}
+
+.underBanner__right {
+    flex: 1;
+    border: 1px black dashed;
+    width: 25%;
+}
