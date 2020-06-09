@@ -1,4 +1,4 @@
-import API from "./Settings.js"
+
 
 getEateryData().then(
     () => {
