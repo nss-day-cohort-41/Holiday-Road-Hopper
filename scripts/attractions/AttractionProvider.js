@@ -1,0 +1,4 @@
+getAttractions()
+    .then(() => 
+        renderAttractions()
+    )
