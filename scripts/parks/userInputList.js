@@ -4,7 +4,7 @@ const userInputParks = () => {
     // convert the current LOCATION TO ITS HTML REPRESENTATION
     const userInputHTML = userParksSearch()
 
-    const locationUserInput = document.querySelector(".dropdownBox")
+    const locationUserInput = document.querySelector(".park_dropdownBox")
 
     //put the Location HTML representation inside the article tag during each loop
     locationUserInput.innerHTML = userInputHTML

@@ -6,7 +6,7 @@ const parkList = () => {
 
         // this looks for the article element in the index 
         
-        const locationParkList = document.querySelector(".dropdownBox")
+        const locationParkList = document.querySelector(".park_dropdownBox")
 
 
         //put the Location HTML representation inside the article tag during each loop

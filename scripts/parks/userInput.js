@@ -69,7 +69,7 @@ const userParksSearch = () => {
 
 
 const clearUserParkHTML = () => {
-    const locationUserInput = document.querySelector(".dropdownBox")
+    const locationUserInput = document.querySelector(".park_dropdownBox")
 
     locationUserInput.innerHTML = ""
 }

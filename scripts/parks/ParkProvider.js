@@ -35,12 +35,12 @@ const myUserInputSearch = () => {
                         console.log(localArrayofParks[0].fullName)
                         for (let park = 0; park < localArrayofParks.length; park++) {
                             // console.log(localArrayofParks[park].fullName)
-                            // parkData.push(localArrayofParks[park].fullName)
-                            parkData.push(localArrayofParks[park])
+                          parkData.push(localArrayofParks[park].fullName)
+                            // parkData.push(localArrayofParks[park])
 
                             // console.log(parkData)
                         }
-                        // console.log(parkData)
+                         console.log(parkData)
 
                     }
                 )
