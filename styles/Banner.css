@@ -1,0 +1,23 @@
+.banner__cover {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 1850px;    
+}
+
+.banner__images {
+    text-align: center;
+}
+
+.banner__logo {
+    position: absolute;
+    display: block;
+    top: 64px;
+    width: 100%;
+}
+
+.martins_logo {
+    height: 200px;
+    width: auto;
+}
+
