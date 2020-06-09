@@ -26,8 +26,10 @@
                 </select>
             </section>
             <section class="dropdownBox">
-                <select name="eatery__Dropdown">
-
+                <select class="eatery__Dropdown">
+                    <option value="none" selected disabled hidden> 
+                        Select an Eatery... 
+                    </option> 
                 </select>
             </section>
 
@@ -35,23 +37,25 @@
         </article>
         <article class="iteneraryPreview">
             <section class="iteneraryPreview__block">
-                <h2>Park choice</h2>
+                <h2>Park Name</h2>
                 <img class="icon" src="" alt="">
                 <div class="block__weather"></div>
                 <div class="block__park"></div>
                 <button class="details" type="button"></button>
             </section>
             <section class="iteneraryPreview__block">
-                <h2>bizarre choice</h2>
+                <h2>Bizarre Name</h2>
                 <img class="icon" src="" alt="">
                 <div class="block__bizarre"></div>
                 <button class="details" type="button"></button>
             </section>
             <section class="iteneraryPreview__block">
-                <h2>eatery choice</h2>
-                <img class="icon" src="" alt="">
-                <div class="block__eatery"></div>
-                <button class="details" type="button"></button>
+                <div class="eatery__block">
+                    <h2>Eatery Name</h2>
+                    <img class="icon" src="" alt="">
+                    <div class="block__eatery"></div>
+                    <button class="details" type="button">Details</button>
+                </div>
             </section>
 
             <button class="saveButton" type="submit"></button>
@@ -73,5 +77,10 @@
     <footer class="footer">
         <p>Copyright Hopper, Hopper, Hopper, & Hopper</p>
     </footer>
+
+    <script src="scripts/eateries/EateryProvider.js"></script>
+    <script src="scripts/eateries/EateryConverter.js"></script>
+    <script src="scripts/eateries/EateryList.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
