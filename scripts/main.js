@@ -5,4 +5,6 @@ getEateryData().then(
 )
 
 
-fetchWeatherData(apiUrl).then(weatherList)
+fetchWeatherData(weatherApiUrl).then(
+    () => {weatherList()}
+    )
