@@ -1,3 +1,5 @@
+import API from "./Settings.js"
+
 getEateryData().then(
     () => {
         eateryList()
@@ -5,6 +7,10 @@ getEateryData().then(
 )
 
 
-fetchWeatherData(weatherApiUrl).then(
-    () => {weatherList()}
+
+
+fetchWeatherData()
+    .then(() => {
+            weatherList()
+        }
     )
