@@ -1,0 +1,5 @@
+getEateryData().then(
+    () => {
+        eateryList()
+    }
+)
