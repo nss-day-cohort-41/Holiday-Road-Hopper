@@ -1,7 +1,8 @@
 const weatherConverter = (weatherObject) => {
+    console.log(weatherObject)
     const weatherHTMLRepresentation = `
-        <p>${weatherObject}</p>
-        <p>I'm here to talk about weather!</p>
+        <h3>Five Day Forecast</h3>
+        <div></div>
     `
     return weatherHTMLRepresentation
 }
