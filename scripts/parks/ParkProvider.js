@@ -4,6 +4,7 @@
 let parkData = [];
 let userSearchParks;
 let userState;
+let parkNames = []
 const myUserInputSearch = () => {
     document.querySelector(".parks__UserInputSearch").addEventListener("click", event => {
         /*
@@ -31,28 +32,26 @@ const myUserInputSearch = () => {
                         // 100 percent sure the data is back\
                         let localArrayofParks= []
                         localArrayofParks = arrayOfNPS.data
-                        console.log(localArrayofParks)
-                        console.log(localArrayofParks[0].fullName)
                         for (let park = 0; park < localArrayofParks.length; park++) {
-                            // console.log(localArrayofParks[park].fullName)
-                          parkData.push(localArrayofParks[park].fullName)
-                            // parkData.push(localArrayofParks[park])
-
-                            // console.log(parkData)
+                            
+                          parkData.push(localArrayofParks[park])
                         }
                          console.log(parkData)
+                         return parkData
 
                     }
-                )
+                ).then( (dataCollection) => {
+                    myParkList(dataCollection);
+
+                })
         }
         
         getLocationData()
-        clearUserParkHTML()
-        // let give = getLocationData()
-
-// console.log(give)
+        
 
     })
+
+   
 }
 
 
