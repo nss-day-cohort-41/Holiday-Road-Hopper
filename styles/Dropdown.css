@@ -1,0 +1,20 @@
+.dropdownContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}   
+
+.dropdownBox {
+    background-color: #90a4ae;
+    width: 25%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-family: sans-serif;
+    height: 30px;
+    position: relative;
+    font-size: 20px;
+    color: #263238;
+    border-radius: 12px;
+}
