@@ -5,4 +5,4 @@ getEateryData().then(
 )
 
 
-
+fetchWeatherData(apiUrl).then(weatherList)
