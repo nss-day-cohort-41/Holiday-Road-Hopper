@@ -1,8 +1,8 @@
+import API from "../Settings.js"
+
 let fiveDayForecast = [];
 
-parkLocation = ''
-
-weatherApiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Nashville&units=imperial&appid=537d2bcd65011c5597fa554c8c682b71"
+const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Nashville&units=imperial&appid=${API.weatherKey}`
 
 //retrieves openweathermap data for selected park 
 const fetchWeatherData = (weatherUrl) => { return fetch(weatherUrl)
