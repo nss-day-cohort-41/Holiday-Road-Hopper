@@ -1,4 +1,5 @@
 const userInputParks = () => {
+
     // iterate using for of loop
 
     // convert the current LOCATION TO ITS HTML REPRESENTATION

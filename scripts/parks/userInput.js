@@ -60,7 +60,7 @@ const userParksSearch = () => {
 	<option class="select__State" value="GU">GUAM</option>
 	<option class="select__State" value="VI">VIRGIN ISLANDS</option>
 </select>
-<button class="parks__UserInputSearch">Search</button>
+
 </fieldset>`
 
     return userParSearchHTMLString;
