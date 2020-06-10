@@ -4,9 +4,20 @@
 
 .weatherBox {
     display: flex;
+    flex-flow: column;
+    border: 1px black solid;
+}
+
+.weatherBox__title {
+    border: 1px black solid;
+}
+
+.weatherBox__element {
+    border: 1px black solid;
+    display: flex;
     flex-flow: row;
 }
 
-.weatherItem__data {
+.weatherItem {
     border: 1px black solid;
 }
