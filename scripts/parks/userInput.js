@@ -4,8 +4,9 @@ const userParksSearch = () => {
     <input type="text" id="parkSearch" placeholder="Enter Park Name" autofocus />
 </fieldset>
 <fieldset>
-    <label for="states">Enter State</label>
-    <select name="parkState" id="parkState" required>
+    <label for="states">Enter State *</label>
+	<select name="parkState" id="parkState" required>
+	<option value="none" selected disabled hidden>Select a State</option>
 	<option class="select__State" value="AL">Alabama</option>
 	<option class="select__State" value="AK">Alaska</option>
 	<option class="select__State" value="AZ">Arizona</option>
@@ -60,16 +61,16 @@ const userParksSearch = () => {
 	<option class="select__State" value="GU">GUAM</option>
 	<option class="select__State" value="VI">VIRGIN ISLANDS</option>
 </select>
-<button class="parks__UserInputSearch">Search</button>
+
 </fieldset>`
 
     return userParSearchHTMLString;
 }
 
 
-
+//the below function clears all the html in dropdownBox section
 const clearUserParkHTML = () => {
-    const locationUserInput = document.querySelector(".dropdownBox")
+    const locationUserInput = document.querySelector(".park_dropdownBox")
 
     locationUserInput.innerHTML = ""
 }
