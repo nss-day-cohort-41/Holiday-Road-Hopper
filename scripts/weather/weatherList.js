@@ -5,7 +5,6 @@
 
 
 const weatherList = (data) => {
-    console.log('weatherList',data)
     for (let currentDay of data) {
         const weatherHTML = weatherConverter(currentDay)
         document.querySelector(".weatherBox__element").innerHTML += weatherHTML

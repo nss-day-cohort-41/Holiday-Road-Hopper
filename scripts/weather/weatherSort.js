@@ -8,7 +8,6 @@ weatherSorter = (weatherData) => {
     for (let i = weatherData.list.length / 8; i <= weatherData.list.length; i += 8) {
         sortedWeather.push(weatherData.list[i])
     }   
-    console.log('sort',sortedWeather)
     return sortedWeather
 }
 
