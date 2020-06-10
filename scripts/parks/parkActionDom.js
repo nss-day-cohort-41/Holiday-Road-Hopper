@@ -9,7 +9,7 @@ const actionAddingPark = () => {
     document.querySelector(".dropDownBoxParks").addEventListener("click", event => {
         // .option__parks
     // let selectedPark = [] 
-   let selectedPark = document.querySelector(".option__parks").value
+   let selectedPark = document.querySelector(".dropDownBoxParks").value
 //    let selectedPark = document.querySelector(".option__parks").value
     
     console.log(selectedPark)
