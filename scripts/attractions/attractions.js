@@ -1,9 +1,9 @@
-const attractionsConverter = (attractions) => {
+const attractionsConverter = (attractions, id) => {
     const attractionsHTMLRepresentation =
-        `<h2>${attractions.name}</h2>
+        `<h2>${attractions[id -1].name}</h2>
         <ul>
-            <li>${attractions.city}, ${attractions.state}</li>
-            <li>${attractions.description}
+            <li>${attractions[id -1].city}, ${attractions[id -1].state}</li>
+            <li>${attractions[id -1].description}
         </ul>`
 
     return attractionsHTMLRepresentation
@@ -12,7 +12,7 @@ const attractionsConverter = (attractions) => {
 
 const attractionsDropdownConverter = (attractions) => {
     const attractionsDropdownHTMLRepresentation =
-        `<option value="${attractions.state}">${attractions.state} - ${attractions.name}</option>`
+        `<option value="${attractions.id}">${attractions.state} - ${attractions.name}</option>`
 
     return attractionsDropdownHTMLRepresentation
 }
