@@ -19,5 +19,12 @@
 }
 
 .weatherItem {
+    display: flex;
     border: 1px black solid;
+}
+
+.weatherItem__data {
+    display: flex;
+    flex-flow: column;
+    padding: .1rem;
 }
