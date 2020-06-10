@@ -8,14 +8,13 @@
 }   
 
 .itineraryPreview__block {
-    background-color: #90a4ae;
     width: 25%;
-    padding: 10px 20px;
-    margin: 15px 0;
+    margin: 0;
     font-family: sans-serif;
     height: 300px;
     position: relative;
     font-size: 20px;
+    border: 5px dashed rgb(165, 162, 162);
     border-radius: 12px;
 }
 
@@ -24,4 +23,24 @@
     width: 100%;
     text-align: right;
     padding: 20px;
+}
+
+.icon {
+    height: 300px;
+    width: auto;
+    border: 5px solid black;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 12px;
+}
+
+.eatery__block {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+    position: absolute;
+    justify-content: center;
 }
