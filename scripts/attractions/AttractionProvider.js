@@ -1,4 +1,0 @@
-getAttractions()
-    .then(() => 
-        renderAttractions()
-    )
