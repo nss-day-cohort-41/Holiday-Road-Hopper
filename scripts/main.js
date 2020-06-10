@@ -15,3 +15,12 @@ fetchWeatherData(weatherApiUrl)
         return blah})
     .then((sortedWeather) => {weatherList(sortedWeather)})
     
+getAttractions()
+    .then(() => 
+        renderAttractions()
+    )
+
+getAttractions()
+    .then(() =>
+        renderAttractionsDropdown()
+    )
