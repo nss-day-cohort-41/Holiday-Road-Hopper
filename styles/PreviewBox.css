@@ -1,10 +1,9 @@
 .itineraryPreview {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+
 }   
 
 .itineraryPreview__block {
@@ -22,7 +21,7 @@
 
 .saveButton {
     float: right;
-    width: 100%;
+    /* width: 100%; */
     text-align: right;
     padding: 20px;
 }
@@ -52,3 +51,11 @@
     /* display: flex;
     flex-flow: column; */
 } 
+
+.previewWrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    text-align: center;
+    
+}
