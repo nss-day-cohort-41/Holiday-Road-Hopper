@@ -8,6 +8,8 @@
 }   
 
 .itineraryPreview__block {
+    display: flex;
+    justify-content: space-evenly;
     width: 25%;
     margin: 0;
     font-family: sans-serif;
