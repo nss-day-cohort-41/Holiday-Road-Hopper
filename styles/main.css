@@ -29,3 +29,7 @@
     border: 1px black dashed;
     width: 25%;
 }
+
+.hidden {
+    display:none;
+}
