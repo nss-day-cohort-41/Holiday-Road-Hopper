@@ -25,5 +25,5 @@ attractionsDropdown.addEventListener("change", (clickEvent) => {
 })
 
 // Code for the details toggle button
-toggleHiddenAttractions = () => {
+const toggleHiddenAttractions = () => {
     document.querySelector(".attractionDetails").classList.toggle("hidden")}
