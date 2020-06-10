@@ -5,3 +5,15 @@ function eateryConverter(eateryObject) {
 
 return eateryHTMLRepresentation
 }
+
+
+
+// CONVERTS HTML TEXT INTO PREVIEW BOX
+
+function eateryPreviewConverter(eateryCollection, id) {
+    const eateryHTMLRepresentation = `<h2>${eateryCollection[id -1].businessName}</h2>
+        <button class="details" type="button">Details</button>
+    <img class="icon" src="" alt="">`
+
+return eateryHTMLRepresentation
+}

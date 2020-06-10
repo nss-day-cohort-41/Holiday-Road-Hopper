@@ -15,3 +15,14 @@ const getEateryData = () => {
         }
     )
 }
+
+
+const stateFilter = () => {
+    const selectedState = []
+    for (const obj of eateryCollection) {
+        if (obj.state === $("#stateSelect option:selected")) {
+            selectedState.push(obj)
+        } 
+    }
+    return selectedState
+}
