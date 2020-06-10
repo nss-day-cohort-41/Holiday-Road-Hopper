@@ -13,7 +13,7 @@
      const locationParkList = document.querySelector(".park_dropdownBox")
     //  locationParkList.innerHTML = ""
         
-     locationParkList.innerHTML += `<select class="dropDownBoxParks"></select>`
+     locationParkList.innerHTML += `<select class="dropDownBoxParks"><option value="none" selected disabled hidden>Select a Park</option></select>`
      // iterate using for of loop
      for (const currentPark of parkData) {
          // convert the current LOCATION TO ITS HTML REPRESENTATION

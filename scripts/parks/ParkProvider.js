@@ -57,8 +57,10 @@ const myUserInputSearch = () => {
                     userInputParks();
                     myParkList(dataCollection);
                     parkData = [];
+                    actionAddingPark();
 
                 })
+
         }
 
          getLocationData()
