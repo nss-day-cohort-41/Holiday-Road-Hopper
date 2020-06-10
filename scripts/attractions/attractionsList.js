@@ -14,7 +14,7 @@ const renderAttractionsDropdown = () => {
 
 const attractionsDropdown = document.querySelector(".bizarre__Dropdown")
 const attractionsTarget = document.querySelector(".block__attraction")
-const clearAttractions = () => attractionsTarget.innerHTML = ""
+// const clearAttractions = () => attractionsTarget.innerHTML = ""
 
 attractionsDropdown.addEventListener("change", (clickEvent) => {
     // Get the value of the option chosen by the user
@@ -26,4 +26,5 @@ attractionsDropdown.addEventListener("change", (clickEvent) => {
 
 // Code for the details toggle button
 const toggleHiddenAttractions = () => {
-    document.querySelector(".attractionDetails").classList.toggle("hidden")}
+    document.querySelector(".attractionDetails").classList.toggle("hidden")
+}
