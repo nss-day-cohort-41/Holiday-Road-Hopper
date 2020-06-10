@@ -1,6 +1,4 @@
 const attractionsConverter = (attractions, id) => {
-    
-    //Lines 5 and 6 contain the code for the details toggle button
     const attractionsHTMLRepresentation =
         `<h2>${attractions[id -1].name}</h2>
         <p>${attractions[id -1].city}, ${attractions[id -1].state}</p>
@@ -9,7 +7,6 @@ const attractionsConverter = (attractions, id) => {
 
     return attractionsHTMLRepresentation
 }
-
 
 const attractionsDropdownConverter = (attractions) => {
     const attractionsDropdownHTMLRepresentation =
