@@ -5,6 +5,11 @@ let parkData = [];
 let userSearchParks;
 let userState;
 let parkNames = []
+
+// the below function deals with collecting data from user inputs and 
+// using that information to gather data from the NPS API
+
+
 const myUserInputSearch = () => {
 
 
@@ -13,9 +18,6 @@ const myUserInputSearch = () => {
             Collect the user put by selecting the input fields, one
             at a time, and accessing the `value` property
         */
-
-       
-        
         const parksSearchString = document.querySelector("#parkSearch").value
         const parksState = document.querySelector("#parkState").value
 
@@ -36,9 +38,15 @@ const myUserInputSearch = () => {
                         let localArrayofParks = []
                         localArrayofParks = arrayOfNPS.data
                         for (let park = 0; park < localArrayofParks.length; park++) {
+
+                            // adding if statement that checks the state
                             
-                            //
-                            parkData.push(localArrayofParks[park])
+                                parkData.push(localArrayofParks[park])
+                            
+
+
+                            // parkData.push(localArrayofParks[park].states)
+
                         }
                         console.log(parkData)
                         return parkData
@@ -50,12 +58,10 @@ const myUserInputSearch = () => {
                     myParkList(dataCollection);
                     parkData = [];
 
-
-
                 })
         }
 
-        getLocationData()
+         getLocationData()
 
 
     })

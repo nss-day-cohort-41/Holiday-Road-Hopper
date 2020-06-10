@@ -35,11 +35,6 @@
          //locationArticleElement has already be set equal to the .locationList class
 
      }
-    //  locationParkList.innerHTML += `</select>`
-    
-     myUserInputSearch();
-     
-    //  locationParkList.innerHTML += `<button class="button__BackToSearch">back</button>`
- }
+    }
 
 
