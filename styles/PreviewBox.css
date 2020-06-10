@@ -38,7 +38,7 @@
 }
 
 .eatery__block {
-    width: 300px;
+    /* width: 300px; */
     height: auto;
     text-align: center;
     padding: 0px;
@@ -46,3 +46,9 @@
     position: absolute;
     justify-content: center;
 }
+
+.preview__block--element {
+    width: 95%;
+    /* display: flex;
+    flex-flow: column; */
+} 
