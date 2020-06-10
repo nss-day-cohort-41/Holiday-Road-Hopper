@@ -2,16 +2,17 @@
 //a park in the select element
 //want the information from that park to be passed to addingpark html
 //want that function to also display the park in its assigned container
-
+let park = []
 
 const actionAddingPark = () => {
     //below is a event listener for the user selecting an option
     document.querySelector(".dropDownBoxParks").addEventListener("click", event => {
         // .option__parks
-    let selectedPark = [] 
-    selectedPark = slectedPark.push(document.querySelector(".dropDownBoxParks").value)
-    
-    console.log(selectedPark)
-
+    // let selectedPark = [] 
+   let selectedPark = document.querySelector(".option__parks").value
+//    let selectedPark = document.querySelector(".option__parks").value
+    park.push(selectedPark)
+    console.log(park)
+                  
 })
 }
