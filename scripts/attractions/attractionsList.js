@@ -23,3 +23,7 @@ attractionsDropdown.addEventListener("change", (clickEvent) => {
     const attractionsArticleElement = document.querySelector(".block__attraction")
     attractionsArticleElement.innerHTML = attractionsHTML
 })
+
+// Code for the details toggle button
+toggleHiddenAttractions = () => {
+    document.querySelector(".attractionDetails").classList.toggle("hidden")}
