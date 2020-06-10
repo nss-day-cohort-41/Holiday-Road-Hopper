@@ -2,8 +2,8 @@
 
 const eateryList = () => {
     eateryListGenerator(eateryCollection)
-    const filter = stateFilter()
-    eateryListGenerator(filter)
+    // const filter = stateFilter()
+    // eateryListGenerator(filter)
 }
 
 const eateryListGenerator = (theDataToDisplay) => {
@@ -61,8 +61,8 @@ const eateryPreviewList = () => {
 const contentTarget = document.querySelector(".eatery__Dropdown")
 
 contentTarget.addEventListener("change", clickEvent => {
-    const userChoice = clickEvent.target.value
-    const eateryHTMLRepresentation = eateryPreviewConverter(eateryCollection, userChoice)
+    const id = clickEvent.target.value
+    const eateryHTMLRepresentation = eateryPreviewConverter(eateryCollection, id)
     const eateryArticleElement = document.querySelector(".eatery__block")
     eateryArticleElement.innerHTML = eateryHTMLRepresentation
     }
@@ -71,3 +71,48 @@ contentTarget.addEventListener("change", clickEvent => {
 
 
 
+const activateButton = () => {
+    contentOverlay(eateryCollection)
+}
+
+ 
+const detailsTarget = document.querySelector(".details")
+
+detailsTarget.addEventListener("click", detailsButton => {
+    const id = detailsButton.target.value
+    const detailsHTML = detailsOverlay(eateryCollection, id)
+    const element = document.querySelector(".popup")
+    element.innerHTML = detailsHTML
+    }
+)
+
+
+
+
+
+
+
+var modal = document.getElementById("popup");
+
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("details");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == overlay) {
+    modal.style.display = "none";
+  }
+}
