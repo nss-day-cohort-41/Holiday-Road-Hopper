@@ -10,7 +10,7 @@ const clearDataConverter = () => {
 }
 function parkDataConverter(parkData) {
     
-    const parkDataHTML = `<option class="option__parks" value="${parkData}">${parkData.fullName}</option>`
+    const parkDataHTML = `<option class="option__parks" value="${parkData.fullName}">${parkData.fullName}</option>`
 
     return parkDataHTML
 }

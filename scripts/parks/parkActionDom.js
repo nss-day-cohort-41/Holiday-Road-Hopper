@@ -2,7 +2,7 @@
 //a park in the select element
 //want the information from that park to be passed to addingpark html
 //want that function to also display the park in its assigned container
-let park = []
+
 
 const actionAddingPark = () => {
     //below is a event listener for the user selecting an option
@@ -11,8 +11,8 @@ const actionAddingPark = () => {
     // let selectedPark = [] 
    let selectedPark = document.querySelector(".option__parks").value
 //    let selectedPark = document.querySelector(".option__parks").value
-    park.push(selectedPark)
-    console.log(park)
+    
+    console.log(selectedPark)
                   
 })
 }
