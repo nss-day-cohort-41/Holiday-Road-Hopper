@@ -1,0 +1,12 @@
+.weatherwrapper {
+    display: flex;
+}
+
+.weatherBox {
+    display: flex;
+    flex-flow: row;
+}
+
+.weatherItem__data {
+    border: 1px black solid;
+}
