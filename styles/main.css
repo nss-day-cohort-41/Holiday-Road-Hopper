@@ -2,6 +2,7 @@
 @import "Dropdown.css";
 @import "PreviewBox.css";
 @import "SavedAside.css";
+@import "weather.css";
 
 .container {
     display: flex;

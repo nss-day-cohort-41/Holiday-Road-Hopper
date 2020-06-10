@@ -34,6 +34,7 @@
                              <button class="parks__UserInputSearch">Search</button>
                              <button class="parks__Filter__Data">Filter</button>
 
+                        </select>                        
                     </section>
                     <section class="dropdownBox">
                         <select class="bizarre__Dropdown">
@@ -106,6 +107,7 @@
                             </option> 
                         </select>
                     </section>
+<<<<<<< HEAD
 
 
                 </article>
@@ -123,18 +125,52 @@
                             <h2>Attraction Name</h2>
                             <img class="icon" src="" alt="">
                             <button class="details" type="button">Details</button>
+=======
+                    
+                    
+                </article>
+                <article class="itineraryPreview">
+                    
+                        <section class="itineraryPreview__block">
+                            <div class="block__park">
+                                <h2>Park Name</h2>
+                                <img class="icon" src="" alt="">
+                                <div class="block__weather"></div>
+                                <button class="details" type="button">Details</button>
+                            </div>
+                        </section>
+                        <section class="itineraryPreview__block">
+                            <div class="block__attraction">
+                                <h2>Attraction Name</h2>
+                                <img class="icon" src="" alt="">
+                                <button class="details" type="button">Details</button>
+                            </div>
+                        </section>
+                        <section class="itineraryPreview__block">
+                            <div class="eatery__block">
+                                <h2>Eatery Name</h2>
+                                <img class="icon" src="" alt="">
+                                <div class="block__eatery"></div>
+                                <button class="details" type="button">Details</button>
+                            </div>
+                        </section>
+                    
+                        
+                        <section class="weatherBox">
+                            <div class="weatherBox__title">
+                                <h3>Five Day Forecast</h3>
+                            </div>
+                            <div class="weatherBox__element">
+
+                            </div>
+                        </section>
+
+                        <div class="saveButton">
+                            <button type="submit">Save Itinerary</button>
+>>>>>>> 94f6febfe6d08c06791e4a04a797520820356a2f
                         </div>
-                    </section>
-                    <section class="itineraryPreview__block">
-                        <div class="eatery__block">
 
-                        </div> 
-
-                    </section>
-
-                    <div class="saveButton">
-                        <button type="submit">Save Itinerary</button>
-                    </div>
+                    
 
                 </article>
             </div>
@@ -151,6 +187,9 @@
             </div>
         </div>
 
+
+
+        
     </main>
     <footer class="footer">
         <p>Copyright Hopper, Hopper, Hopper, & Hopper</p>
@@ -173,10 +212,17 @@
     <script src="scripts/attractions/attractions.js"></script>
     <script src="scripts/attractions/attractionsList.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/scripts/parks/ParkProvider.js"></script>
+ 
+    <script src="/scripts/weather/WeatherProvider.js"></script>
+    <script src="/scripts/weather/weatherSort.js"></script>
+    <script src="/scripts/weather/weatherConverter.js"></script>
+    <script src="/scripts/weather/weatherList.js"></script>
+    
     <script src="scripts/eateries/EateryProvider.js"></script>
     <script src="scripts/eateries/EateryConverter.js"></script>
     <script src="scripts/eateries/EateryList.js"></script>
-    <script src="scripts/main.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
 </body>
 
 </html>

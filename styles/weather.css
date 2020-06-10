@@ -1,0 +1,30 @@
+.weatherwrapper {
+    display: flex;
+}
+
+.weatherBox {
+    display: flex;
+    flex-flow: column;
+    border: 1px black solid;
+}
+
+.weatherBox__title {
+    border: 1px black solid;
+}
+
+.weatherBox__element {
+    border: 1px black solid;
+    display: flex;
+    flex-flow: row;
+}
+
+.weatherItem {
+    display: flex;
+    border: 1px black solid;
+}
+
+.weatherItem__data {
+    display: flex;
+    flex-flow: column;
+    padding: .1rem;
+}
