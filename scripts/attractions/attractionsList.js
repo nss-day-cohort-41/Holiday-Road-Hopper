@@ -7,12 +7,12 @@ const renderAttractions = () => {
 const renderAttractionsDropdown = () => {
     for (const currentAttractionDropdown of attractions) {
     const attractionsDropdownHTML = attractionsDropdownConverter(currentAttractionDropdown)
-    const attractionsDropdownArticleElement = document.querySelector(".bizarre__dropdown")
+    const attractionsDropdownArticleElement = document.querySelector(".bizarre__Dropdown")
     attractionsDropdownArticleElement.innerHTML += attractionsDropdownHTML
     }
 }
 
-const attractionsDropdown = document.querySelector(".bizarre__dropdown")
+const attractionsDropdown = document.querySelector(".bizarre__Dropdown")
 const attractionsTarget = document.querySelector(".block__attraction")
 const clearAttractions = () => attractionsTarget.innerHTML = ""
 
