@@ -1,4 +1,5 @@
-import API from "./Settings.js"
+
+  import API from "./Settings.js"
 
 getEateryData().then(
     () => {
@@ -7,7 +8,11 @@ getEateryData().then(
 )
 
 
-const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Nashville&units=imperial&appid=${API.weatherKey}`
+ userInputParks();
+ myUserInputSearch(API);
+
+
+ const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Nashville&units=imperial&appid=${API.weatherKey}`
 
 fetchWeatherData(weatherApiUrl)
     .then(() => {
@@ -24,3 +29,5 @@ getAttractions()
     .then(() =>
         renderAttractionsDropdown()
     )
+
+    
