@@ -56,7 +56,7 @@ const actionAddingPark = (API) => {
                         //singleParkData.longLat gives long and latitudes
                         //pass singleParkData
                         //singleParkData is ready to have a key put to it example singleParkData.key
-
+                        getWeather.fetchWeatherData(parkWeatherData.linkGenerator(singleParkData, API))
                         //details
 
                         myParkArray = [];
