@@ -8,7 +8,7 @@ const weatherIcon = {
 
         //icon img link
 
-        iconString = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`
+        iconString = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
 
         return iconString
     }

@@ -39,6 +39,13 @@
 }
 
 .weatherItem__data--element {
+    height: 95%;
+    width: auto;
     padding: .1rem;
     margin: .1rem;
+}
+
+.weatherItem__data--icon {
+    height: 100%;
+    width: auto;
 }
