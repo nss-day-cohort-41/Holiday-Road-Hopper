@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great American Road Trip</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <main class="container">
+        <!-- POPUP CONTAINER -->
+        
+                    <div id="popup" class="modal">
+        
+                    </div>
+                    
+        <!-- POPUP CONTAINER END -->
+
         <header class="banner">
             <img class="banner__cover" src="images/park-panorama.jpg">
             <div class="banner__logo">
@@ -17,15 +27,17 @@
         </header>
         <div class="underBanner">
             
-            <div id="popup" class="overlay">
-
-            </div>
 
             <div class="underBanner__left">
 
                 <article class="dropdownContainer">
                     <section class="dropdownBox">
-                        <select name="park__Dropdown">
+                        
+                        <section class="park_dropdownBox">
+                            
+                        </section>
+                             <button class="parks__UserInputSearch">Search</button>
+                             <button class="parks__Filter__Data">Filter</button>
 
                         </select>                        
                     </section>
@@ -106,12 +118,16 @@
                 <article class="itineraryPreview">
                     
                         <section class="itineraryPreview__block">
+                            <h2>Park Preview</h2>
                             <div class="block__park">
-                                <h2>Park Name</h2>
+                                
                                 <img class="icon" src="" alt="">
-                                <div class="block__weather"></div>
-                                <button class="details" type="button">Details</button>
                             </div>
+                                <div class ="buttonDetails__weather">
+                                    <div class="block__weather"></div>
+                                    <button class="details" type="button">Details</button>
+                                    </div>
+                            
                         </section>
                         <section class="itineraryPreview__block">
                             <div class="block__attraction">
@@ -122,10 +138,7 @@
                         </section>
                         <section class="itineraryPreview__block">
                             <div class="eatery__block">
-                                <h2>Eatery Name</h2>
-                                <img class="icon" src="" alt="">
-                                <div class="block__eatery"></div>
-                                <button class="details" type="button">Details</button>
+                                <h2>Select an Eatery</h2>
                             </div>
                         </section>
                     
@@ -149,7 +162,7 @@
             </div>
             <div class="underBanner__right">
                 <aside class="savedItineraries">
-                    
+
                     <div class="savedItineraries__display">
                         <div class="display--savedPark">Test</div>
                         <div class="display--savedBizarre">Test</div>
@@ -168,6 +181,20 @@
         <p>Copyright Hopper, Hopper, Hopper, & Hopper</p>
     </footer>
 
+    <script src="scripts/parks/userInput.js"></script>
+    <script src="scripts/parks/parkList.js"></script>
+    <script src="scripts/parks/userInputList.js"></script>
+    <script src="scripts/parks/parkDataConvert.js"></script>
+    <script src="scripts/parks/ParkProvider.js"></script>
+    <script src="scripts/parks/filterData.js"></script>
+    <script src="scripts/parks/filterDataHTML.js"></script>
+    <script src="scripts/parks/parkActionDom.js"></script>
+    <script src="scripts/parks/addingParkHTML.js"></script>
+    <script src="scripts/parks/parkPreviewList.js"></script>
+
+
+
+
     <script src="scripts/attractions/attractionsData.js"></script>
     <script src="scripts/attractions/attractions.js"></script>
     <script src="scripts/attractions/attractionsList.js"></script>
@@ -184,4 +211,5 @@
     <script src="scripts/eateries/EateryList.js"></script>
     <script type="module" src="/scripts/main.js"></script>
 </body>
+
 </html>
