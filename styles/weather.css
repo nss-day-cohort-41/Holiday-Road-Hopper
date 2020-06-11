@@ -23,7 +23,7 @@
 
 .weatherItem {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border: 1px black solid;
     margin: .2rem;
     border-radius: 4px;
@@ -43,9 +43,11 @@
     width: auto;
     padding: .1rem;
     margin: .1rem;
+    border: 1px black solid;
 }
 
 .weatherItem__data--icon {
     height: 100%;
     width: auto;
+    border: 1px black solid;
 }
