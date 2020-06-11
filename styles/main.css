@@ -1,9 +1,15 @@
 @import "Banner.css";
+@import "DetailsOverlay.css";
 @import "Dropdown.css";
 @import "PreviewBox.css";
 @import "SavedAside.css";
 @import "weather.css";
-@import "DetailsOverlay.css";
+@import "weather-icons.css";
+@import "weather-icons-wind.css";
+@import "weather-icons-wind.min.css";
+@import "weather-icons.min.css";
+
+
 .container {
     display: flex;
     flex-direction: column;

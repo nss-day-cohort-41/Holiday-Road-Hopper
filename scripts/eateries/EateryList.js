@@ -43,7 +43,7 @@ const eateryPreviewList = () => {
 const contentTarget = document.querySelector(".eatery__Dropdown")
 
 contentTarget.addEventListener("change", clickEvent => {
-    const id = clickEvent.target.value
+    const id = parseInt(clickEvent.target.value)
     const eateryHTMLRepresentation = eateryPreviewConverter(eateryCollection, id)
     const eateryArticleElement = document.querySelector(".eatery__block")
     eateryArticleElement.innerHTML = eateryHTMLRepresentation
@@ -52,34 +52,37 @@ contentTarget.addEventListener("change", clickEvent => {
 )
 
 
-const eateryDisplay = () => {
-    addDetailsEventListener(eateryCollection)
-}
+// const eateryDisplay = () => {
+//     const preview = eateryPreviewList()
+//     addDetailsEventListener(preview)
+// }
 
 // EVENT LISTENER FOR DETAILS BUTTON CLICK
 const addDetailsEventListener = () => {
     const detailsTarget = document.getElementById("detailsButton")
     detailsTarget.addEventListener("click", clickEvent => {
-        const eateryObject = clickEvent.target.value  
-        const detailsHTML = eateryDetailsConverter(eateryObject)
-        console.log('EATERY OBJECT', eateryObject)
+        const eateryObject = parseInt(clickEvent.target.value)  
+        const detailsHTML = eateryDetailsConverter(eateryCollection, eateryObject)
+            console.log('EATERY OBJECT', eateryObject)
         const element = document.querySelector("#popup")
         element.innerHTML = detailsHTML
             console.log('THE STUFF DISPLAYED', eateryObject)
-            console.log('Details Button clicked', detailsHTML)
+            console.log('DETAILS BUTTON CLICKED', detailsHTML)
             modalDisplayFunction()
         }
     )
 }
 
-
-
-// document.addEventListener("click", clickEvent => {
-//     if document.querySelector("#detailsButton")
-//     console.log('button clicked')
+// const addDetailsEventListener = (eateries) => {
+//     for (const eateryObject of eateries) {
+//         const detailsHTML = eateryDetailsConverter(eateryObject)
+//         const detailsElement = document.querySelector("#popup")
+//         detailsElement.innerHTML += detailsHTML
+//         console.log('THE STUFF DISPLAYED', eateryObject)
+//         console.log('DETAILS BUTTON CLICKED', detailsHTML)
+//         modalDisplayFunction()
 //     }
-// )
-
+// }
 
 
 // DECLARE 3 VARIABLES FOR EACH HTML ELEMENT
