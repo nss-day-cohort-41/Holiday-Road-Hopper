@@ -1,6 +1,6 @@
 
 
-//module responsible for modifying the DOM
+//module responsible for passing api data into html converter and modifying the DOM
 
 
 
