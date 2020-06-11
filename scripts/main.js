@@ -24,3 +24,6 @@ getAttractions()
     .then(() =>
         renderAttractionsDropdown()
     )
+
+
+ 
