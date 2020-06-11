@@ -47,7 +47,7 @@
 }
 
 .weatherItem__data--icon {
-    height: 100%;
+    height: auto;
     width: auto;
     border: 1px black solid;
 }
