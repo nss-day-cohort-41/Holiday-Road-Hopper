@@ -4,8 +4,9 @@
 // designation
 
 
+
 const parkDetailsHTML = (selectedData) => {
-    const parkDetails = `<h2>${selectedData.fullName}</h2> 
+    const parkDetails = `<h4>${selectedData.fullName}</h4> 
     <ol class="parkDeatilsList">
     <li class="parkDeatilsListItem park__designation">${selectedData.description}</li>
     </ol>`

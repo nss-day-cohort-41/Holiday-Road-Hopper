@@ -13,4 +13,5 @@ const userInputParks = () => {
 
     //innerHTML allows editing to happen inside of the html document 
     //locationArticleElement has already be set equal to the .locationList class
+    return "string"
 }
