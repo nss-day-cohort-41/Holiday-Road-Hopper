@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great American Road Trip</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <main class="container">
         <header class="banner">
@@ -30,8 +32,18 @@
 
                 <article class="dropdownContainer">
                     <section class="dropdownBox">
+<<<<<<< HEAD
                         <select class="park__Dropdown dropdown__format">
                             <option value="none" selected disabled>Select a park</option>
+=======
+                        
+                        <section class="park_dropdownBox">
+                            
+                        </section>
+                             <button class="parks__UserInputSearch">Search</button>
+                             <button class="parks__Filter__Data">Filter</button>
+
+>>>>>>> master
                         </select>                        
                     </section>
                     <section class="dropdownBox">
@@ -111,12 +123,16 @@
                 <article class="itineraryPreview">
                     <div class="previewWrapper">
                         <section class="itineraryPreview__block">
+                            <h2>Park Preview</h2>
                             <div class="block__park preview__block--element">
-                                <h2>Park Name</h2>
+                                
                                 <img class="icon" src="" alt="">
-                                <div class="block__weather"></div>
-                                <button class="details" type="button">Details</button>
                             </div>
+                                <div class ="buttonDetails__weather">
+                                    <div class="block__weather"></div>
+                                    <button class="details" type="button">Details</button>
+                                    </div>
+                            
                         </section>
                         <section class="itineraryPreview__block">
                             <div class="block__attraction preview__block--element">
@@ -154,7 +170,7 @@
             </div>
             <div class="underBanner__right">
                 <aside class="savedItineraries">
-                    
+
                     <div class="savedItineraries__display">
                         <div class="display--savedPark">Test</div>
                         <div class="display--savedBizarre">Test</div>
@@ -173,6 +189,20 @@
         <p>Copyright Hopper, Hopper, Hopper, & Hopper</p>
     </footer>
 
+    <script src="scripts/parks/userInput.js"></script>
+    <script src="scripts/parks/parkList.js"></script>
+    <script src="scripts/parks/userInputList.js"></script>
+    <script src="scripts/parks/parkDataConvert.js"></script>
+    <script src="scripts/parks/ParkProvider.js"></script>
+    <script src="scripts/parks/filterData.js"></script>
+    <script src="scripts/parks/filterDataHTML.js"></script>
+    <script src="scripts/parks/parkActionDom.js"></script>
+    <script src="scripts/parks/addingParkHTML.js"></script>
+    <script src="scripts/parks/parkPreviewList.js"></script>
+
+
+
+
     <script src="scripts/attractions/attractionsData.js"></script>
     <script src="scripts/attractions/attractions.js"></script>
     <script src="scripts/attractions/attractionsList.js"></script>
@@ -190,4 +220,5 @@
     <script src="scripts/eateries/EateryList.js"></script>
     <script type="module" src="/scripts/main.js"></script>
 </body>
+
 </html>
