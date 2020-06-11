@@ -13,7 +13,7 @@
         <!-- POPUP CONTAINER -->
         
                     <div id="popup" class="modal">
-        
+                    
                     </div>
                     
         <!-- POPUP CONTAINER END -->
@@ -25,6 +25,7 @@
             </div>
 
         </header>
+
         <div class="underBanner">
             
 
@@ -42,7 +43,7 @@
                         </select>                        
                     </section>
                     <section class="dropdownBox">
-                        <select class="bizarre__Dropdown">
+                        <select class="bizarre__Dropdown dropdown__format">
                             <option value="none" selected disabled>Select an attraction...</option>
                         </select>
                     </section>
@@ -106,7 +107,7 @@
                         </div>
 
 
-                        <select class="eatery__Dropdown">
+                        <select class="eatery__Dropdown dropdown__format">
                             <option value="none" selected disabled> 
                                 Select an Eatery... 
                             </option> 
@@ -116,7 +117,7 @@
                     
                 </article>
                 <article class="itineraryPreview">
-                    
+                    <div class="previewWrapper">
                         <section class="itineraryPreview__block">
                             <h2>Park Preview</h2>
                             <div class="block__park">
@@ -130,7 +131,7 @@
                             
                         </section>
                         <section class="itineraryPreview__block">
-                            <div class="block__attraction">
+                            <div class="block__attraction preview__block--element">
                                 <h2>Attraction Name</h2>
                                 <img class="icon" src="" alt="">
                                 <button class="details" type="button">Details</button>
@@ -141,8 +142,8 @@
                                 <h2>Select an Eatery</h2>
                             </div>
                         </section>
-                    
-                        
+                    </div>
+                    <div class="weatherWrapper">  
                         <section class="weatherBox">
                             <div class="weatherBox__title">
                                 <h3>Five Day Forecast</h3>
@@ -152,10 +153,10 @@
                             </div>
                         </section>
 
-                        <div class="saveButton">
-                            <button type="submit">Save Itinerary</button>
+                        <div class="saveButtonBox">
+                            <button class="saveButton" type="submit">Save Itinerary</button>
                         </div>
-
+                    </div> 
                     
 
                 </article>
@@ -181,6 +182,15 @@
         <p>Copyright Hopper, Hopper, Hopper, & Hopper</p>
     </footer>
 
+    <!-- weather scripts  -->
+    <script src="/scripts/weather/weatherLinkGenerator.js"></script>
+    <script src="/scripts/weather/WeatherProvider.js"></script>
+    <script src="/scripts/weather/weatherSort.js"></script>
+    <script src="/scripts/weather/weatherConverter.js"></script>
+    <script src="/scripts/weather/weatherList.js"></script>
+
+
+    <!-- park scripts  -->
     <script src="scripts/parks/userInput.js"></script>
     <script src="scripts/parks/parkList.js"></script>
     <script src="scripts/parks/userInputList.js"></script>
@@ -192,20 +202,15 @@
     <script src="scripts/parks/addingParkHTML.js"></script>
     <script src="scripts/parks/parkPreviewList.js"></script>
 
-
-
-
+    <!-- attraction scripts  -->
     <script src="scripts/attractions/attractionsData.js"></script>
     <script src="scripts/attractions/attractions.js"></script>
     <script src="scripts/attractions/attractionsList.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="/scripts/parks/ParkProvider.js"></script>
- 
-    <script src="/scripts/weather/WeatherProvider.js"></script>
-    <script src="/scripts/weather/weatherSort.js"></script>
-    <script src="/scripts/weather/weatherConverter.js"></script>
-    <script src="/scripts/weather/weatherList.js"></script>
     
+
+    <!-- eatery scrips & main  -->
     <script src="scripts/eateries/EateryProvider.js"></script>
     <script src="scripts/eateries/EateryConverter.js"></script>
     <script src="scripts/eateries/EateryList.js"></script>

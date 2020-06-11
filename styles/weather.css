@@ -1,11 +1,14 @@
 .weatherwrapper {
     display: flex;
+    flex-flow: row;
+    justify-content: space-around;
 }
 
 .weatherBox {
     display: flex;
     flex-flow: column;
     border: 1px black solid;
+    
 }
 
 .weatherBox__title {
@@ -20,11 +23,22 @@
 
 .weatherItem {
     display: flex;
+    justify-content: space-evenly;
     border: 1px black solid;
+    margin: .2rem;
+    border-radius: 4px;
+    
 }
 
 .weatherItem__data {
     display: flex;
     flex-flow: column;
     padding: .1rem;
+    width: 95%;
+
+}
+
+.weatherItem__data--element {
+    padding: .1rem;
+    margin: .1rem;
 }

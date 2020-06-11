@@ -6,7 +6,7 @@ function eateryConverter(eateryObject) {
 return eateryHTMLRepresentation
 }
 
-
+// value="${eateryCollection[id -1]}"
 
 // CONVERTS HTML TEXT INTO PREVIEW BOX
 
@@ -18,23 +18,23 @@ function eateryPreviewConverter(eateryCollection, id) {
     <img class="icon" src="" alt="">`
 
 return eateryHTMLRepresentation
+
 }
 
 
 // DETAILS BUTTON OVERLAY
 
-function detailsOverlay(eateryCollection, id) {
-    const detailsHTML = `
-    <div class="modal-content">
-        <h2>${eateryCollection[id -1].businessName}</h2>
+const eateryDetailsConverter = (eateryObject) => {
+    console.log('THE STUFF I WANT TO APPEAR', eateryObject)
+    const detailsHTML = `<div class="modal-content">
+        <h2>${eateryObject.businessName}</h2>
         <span class="close">&times;</span>
         <div class="content">
             <p>Vegan lumbersexual pug, godard 8-bit sustainable four loko PBR&B 3 wolf moon copper mug edison bulb farm-to-table you probably haven't heard of them bicycle rights. Jean shorts cold-pressed tacos pabst raclette photo booth.</p>
         </div>
     </div>`
+    console.log('THE STUFF THAT ACTUALLY APPEARS', detailsHTML)
 
 return detailsHTML
 }
-
-/* <button class="details" type="button">Details</button> */
 

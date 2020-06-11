@@ -7,13 +7,9 @@ const eateryList = () => {
 }
 
 const eateryListGenerator = (theDataToDisplay) => {
-    // Iterate the array of eateries
     for (const eateryObject of theDataToDisplay) {
-        // Convert the current eatery to its HTML representation
         const eateryHTMLRepresentation = eateryConverter(eateryObject)
-        // Find the HTML element in index.html
         const eateryArticleElement = document.querySelector(".eatery__Dropdown")
-        // Put the eatery HTML representation inside the HTML element
         eateryArticleElement.innerHTML += eateryHTMLRepresentation
     }
 }
@@ -56,17 +52,22 @@ contentTarget.addEventListener("change", clickEvent => {
 )
 
 
-
+const eateryDisplay = () => {
+    addDetailsEventListener(eateryCollection)
+}
 
 // EVENT LISTENER FOR DETAILS BUTTON CLICK
 const addDetailsEventListener = () => {
     const detailsTarget = document.getElementById("detailsButton")
     detailsTarget.addEventListener("click", clickEvent => {
-        const id = clickEvent.target.display
-        const detailsHTML = detailsOverlay(eateryCollection, id)
-        const element = document.querySelector(".popup")
+        const eateryObject = clickEvent.target.value  
+        const detailsHTML = eateryDetailsConverter(eateryObject)
+        console.log('EATERY OBJECT', eateryObject)
+        const element = document.querySelector("#popup")
         element.innerHTML = detailsHTML
-        console.log('Details Button clicked')
+            console.log('THE STUFF DISPLAYED', eateryObject)
+            console.log('Details Button clicked', detailsHTML)
+            modalDisplayFunction()
         }
     )
 }
@@ -84,29 +85,21 @@ const addDetailsEventListener = () => {
 // DECLARE 3 VARIABLES FOR EACH HTML ELEMENT
 // WRITE FUNCTIONS TO DISPLAY AND CLOASE MODAL
 
-// Get the modal
-var modal = document.getElementById("popup");
+const modalDisplayFunction = () => {
+    var modal = document.getElementById("popup");
+    var btn = document.getElementById("detailsButton");
+    var span = document.getElementsByClassName("close")[0];
 
-// Get the button that opens the modal
-var btn = document.getElementById("detailsButton");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-  console.log('button clicked')
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+    btn.onclick = function() {
+    modal.style.display = "block";
+    console.log('button clicked')
+    }
+    span.onclick = function() {
     modal.style.display = "none";
-  }
+    }
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
 }
