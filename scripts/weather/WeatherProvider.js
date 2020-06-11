@@ -12,4 +12,12 @@ const fetchWeatherData = (weatherData) => {
                 
 }
 
+const getWeather =  {
+    fetchWeatherData (weatherData) {
+        return fetch(weatherData)
+                .then(httResponse => {return httResponse.json()})
+
+    }
+}
+
 
