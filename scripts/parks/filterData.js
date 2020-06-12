@@ -3,10 +3,11 @@
 
 
 const parkFilter = () => {
-    const park_detailsTarget = document.getElementsByClassName("parks__Filter__Data")
+    const park_detailsTarget = document.querySelector(".parks__Filter__Data")
 
-    
+    console.log("readthisplease")
     park_detailsTarget.addEventListener("click", clickEvent => {
+    console.log("readthispleasepart2")
         
         const detailsHTML = filterDetailsHTML()
         const element = document.querySelector("#popup")
@@ -20,7 +21,7 @@ const parkFilter = () => {
 const parkFilterDisplayFunction = () => {
     var modal = document.getElementById("popup");
     // CHANGE var btn ELEMENT ID TO YOUR DETAILS BUTTON ID, delete comment
-    var btn = document.getElementById("parks__Filter__Data");
+    var btn = document.getElementsByClassName("parks__Filter__Data");
     var span = document.getElementsByClassName("close")[0];
 
   
