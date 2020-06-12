@@ -6,16 +6,12 @@
 
 .weatherBox {
     display: flex;
-    flex-flow: column;
-    /* border: 1px black solid; */
-    
+    flex-flow: column;    
 }
 
 .weatherBox__title {
     /* border: 1px black solid; */
-}
-
-.weatherBox__title > h3 {
+    display: flex;
     width: 50%;
     text-align: left;
     margin: 20px 0 0 0;
@@ -23,18 +19,22 @@
     border-radius: 0 18px 0 0;
 }
 
+.weatherBox__title > h3 {
+ margin: 0rem .5rem;
+}
+
 .weatherBox__element {
-    border: 1px black solid;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     border-radius: 0 18px 0 18px;
+    background-color:skyblue;
+    border: 2px black solid;
 }
 
 .weatherItem {
     display: flex;
     justify-content: space-around;
-    border: 1px black solid;
     margin: .2rem;
     border-radius: 4px;
     border-radius: 0 18px 0 18px;
@@ -52,10 +52,14 @@
     width: auto;
     padding: .1rem;
     margin: .1rem;
-    border: 1px black solid;
+    
 }
 
 .weatherItem__data--icon {
-  
-    border: 1px black solid;
+  background-color: lightsteelblue;
+  border-radius: 0 18px 0 18px;
+  margin: .1rem;
+  border: 2px black solid;
+  height: 9rem;
+  width: 9rem;
 }

@@ -11,10 +11,11 @@ const weatherList = (data) => {
      
     clearWeatherData()
     document.querySelector(".weatherBox").classList.remove("hidden")
+    const cityHTML = weatherConverter.cityConverter(data.city)
+    document.querySelector(".weatherBox__title").innerHTML += cityHTML
     for (let currentDay of data.forecast) {
-        const weatherHTML = weatherConverter(currentDay, data.city)
+        const weatherHTML = weatherConverter.forecastConverter(currentDay)
         document.querySelector(".weatherBox__element").innerHTML += weatherHTML
-        
-        
+                
     }
 }
