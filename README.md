@@ -4,24 +4,24 @@ Team Hopper (named after Grace Hopper, a pioneer in programming) was tasked with
 
 Concepts covered in this project including using apis to fetch data from external databases and displaying that data in a way that is useful for the user.
 
-##John Hester
+## John Hester
 -Created the 5 day weather forecast
 -Fetched data using the openweathermap.org API
 -Parsed information to display only relevant weather data information to the user including date, time, weather, conditions
 -Forecast takes the user selection data for National Park Choice to show the weather conditions for only in that area
 
-##Chad Jones
+## Chad Jones
 -Created eateries section
 -Created eateries dropdown, display, and details modal utilizing JavaScript functions, loops, and event listeners
 -In charge of overall design for web app utilizing CSS, JavaScript, and HTML
 -Fetched eateries information from exteral database
 
-##Christopher McColgan
+## Christopher McColgan
 -Created attractions section
 -Fetched attractions information from exteral database
 -Generated attractions dropdown and preview using JavaScript functions, loops, and event listeners
 
-##Gavin Swofford
+## Gavin Swofford
 -Created park selection section
 -Fetched data using the National Park Service API
 -Created event listeners that allow users to search and filter parks by state and name
