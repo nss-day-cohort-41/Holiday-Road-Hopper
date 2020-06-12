@@ -84,3 +84,8 @@ h4 {
     height: 100%;
     vertical-align: middle;
 }
+
+.attractionDetails {
+    background-color: white;
+    border: solid 1px black;
+}
