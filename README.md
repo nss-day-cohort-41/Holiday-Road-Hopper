@@ -10,7 +10,7 @@ Concepts covered in this project include using APIs to fetch data from external 
 - Created the 5 day weather forecast
 - Fetched data using the openweathermap.org API
 - Parsed information to display only relevant weather data information to the user including date, time, weather, conditions
-- Forecast takes the user selection data for National Park Choice to show the weather conditions for only in that area
+- Forecast takes the user selection data from their park selection to show the weather conditions for only in that area
 
 ## Chad Jones
 - Created eateries section
