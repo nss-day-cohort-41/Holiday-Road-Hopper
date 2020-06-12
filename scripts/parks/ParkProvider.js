@@ -20,6 +20,10 @@ const myUserInputSearch = (API) => {
         const parksSearchString = document.querySelector("#parkSearch").value
         const parksState = document.querySelector("#parkState").value
 
+        if(parksState === "none") {
+            alert("Must Select a State")
+        }
+        else {
         userSearchParks = parksSearchString;
         userState = parksState;
 
@@ -56,7 +60,7 @@ const myUserInputSearch = (API) => {
 
          getLocationData()
          
-        
+    }
     })
     parkFilter()
     

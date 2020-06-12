@@ -2,14 +2,14 @@ const filterDetailsHTML = () => {
 
     const parkDetailsHTMLRepresentation = `<div class="modal-content">
             <span class="close">&times;</span>
-            <h4></h4>
+            <h4>Select an Activity</h4>
             <div class="content" id="parkActivity">
                 <dl>
-                    <dt>Select an Activity</dt>
-                    <dd type="" option="biking">Biking</dd>
-                    <dd option="caving">Caving</dd>
-                    <dd option="climbing">Biking</dd>
-                    <dd option="wildlife watching">Wildlife Watching</dd>
+                    <dt>Activities</dt>
+                    <dd><input type="radio" class="detailsRadio">Biking</dd>
+                    <dd><input type="radio" class="detailsRadio">Caving</dd>
+                    <dd><input type="radio" class="detailsRadio">Biking</dd>
+                    <dd><input type="radio" class="detailsRadio">Wildlife Watching</dd>
                    
                 </dl>
             </div>
