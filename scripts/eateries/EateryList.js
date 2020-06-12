@@ -16,22 +16,22 @@ const eateryListGenerator = (theDataToDisplay) => {
 
 
 
-//FILTER BY STATE
-const stateTarget = document.querySelector(".eatery__Dropdown")
-const clearList = () => stateTarget.innerHTML = ""
+// //FILTER BY STATE
+// const stateTarget = document.querySelector(".eatery__Dropdown")
+// const clearList = () => stateTarget.innerHTML = ""
 
-const storedState = $("#stateSelect").on('change', function() {
-    const selectedState = $("#stateSelect option:selected").val()
-    console.log(selectedState)
-    // return selectedState
-    if (selectedState === `${eateryCollection.state}`) {
-        clearList()
-        eateryList(filter)
-    } else {
-        clearList()
-        eateryList()
-    } 
-})
+// const storedState = $("#stateSelect").on('change', function() {
+//     const selectedState = $("#stateSelect option:selected").val()
+//     console.log(selectedState)
+//     // return selectedState
+//     if (selectedState === `${eateryCollection.state}`) {
+//         clearList()
+//         eateryList(filter)
+//     } else {
+//         clearList()
+//         eateryList()
+//     } 
+// })
 
 
 

@@ -11,7 +11,7 @@ let parkNames = []
 // using that information to gather data from the NPS API
 
 const myUserInputSearch = (API) => {
-
+    
     document.querySelector(".parks__UserInputSearch").addEventListener("click", event => {
         /*
             Collect the user put by selecting the input fields, one
@@ -20,6 +20,10 @@ const myUserInputSearch = (API) => {
         const parksSearchString = document.querySelector("#parkSearch").value
         const parksState = document.querySelector("#parkState").value
 
+        if(parksState === "none") {
+            alert("Must Select a State")
+        }
+        else {
         userSearchParks = parksSearchString;
         userState = parksState;
 
@@ -55,7 +59,11 @@ const myUserInputSearch = (API) => {
         }
 
          getLocationData()
+         
+    }
     })
+    parkFilter()
+    
 }
 
 
