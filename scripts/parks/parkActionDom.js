@@ -35,8 +35,9 @@ const actionAddingPark = (dataCollection, API) => {
                        selectedCity.push(userCity[j].city)
                     }
                    
-``
+``                  
                     parkPreviewList(selectedParkData, selectedCity)
+                    parkDetails(selectedParkData, selectedCity)
                     //passing selectedParkData into weather 
                     getWeather.fetchWeatherData(parkWeatherData.linkGenerator(selectedParkData, API))
 
