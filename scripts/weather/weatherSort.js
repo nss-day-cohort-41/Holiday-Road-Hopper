@@ -4,10 +4,15 @@
 
 
 weatherSorter = (weatherData) => {
-    const sortedWeather = []
+    
+    const sortedWeather = {}
+    sortedWeather.city = weatherCity.getCity(weatherData)
+    sortedWeather.forecast = []
+
     for (let i = weatherData.list.length / 8; i <= weatherData.list.length; i += 8) {
-        sortedWeather.push(weatherData.list[i])
-    }   
+        sortedWeather.forecast.push(weatherData.list[i])
+    } 
+    
     return sortedWeather
 }
 
