@@ -52,37 +52,27 @@ contentTarget.addEventListener("change", clickEvent => {
 )
 
 
-// const eateryDisplay = () => {
-//     const preview = eateryPreviewList()
-//     addDetailsEventListener(preview)
-// }
+
 
 // EVENT LISTENER FOR DETAILS BUTTON CLICK
 const addDetailsEventListener = () => {
-    const detailsTarget = document.getElementById("detailsButton")
+    // getElementById on line 65 & 85 to appropride ID below:
+    // detailsButton__park,
+    // detailsButton__attraction,
+    // detailsButton__eatery
+
+    // delete lines 59 thru 64 after changing
+    const detailsTarget = document.getElementById("detailsButton__eatery")
     detailsTarget.addEventListener("click", clickEvent => {
         const eateryObject = parseInt(clickEvent.target.value)  
         const detailsHTML = eateryDetailsConverter(eateryCollection, eateryObject)
-            console.log('EATERY OBJECT', eateryObject)
         const element = document.querySelector("#popup")
         element.innerHTML = detailsHTML
-            console.log('THE STUFF DISPLAYED', eateryObject)
-            console.log('DETAILS BUTTON CLICKED', detailsHTML)
-            modalDisplayFunction()
+        modalDisplayFunction()
         }
     )
 }
 
-// const addDetailsEventListener = (eateries) => {
-//     for (const eateryObject of eateries) {
-//         const detailsHTML = eateryDetailsConverter(eateryObject)
-//         const detailsElement = document.querySelector("#popup")
-//         detailsElement.innerHTML += detailsHTML
-//         console.log('THE STUFF DISPLAYED', eateryObject)
-//         console.log('DETAILS BUTTON CLICKED', detailsHTML)
-//         modalDisplayFunction()
-//     }
-// }
 
 
 // DECLARE 3 VARIABLES FOR EACH HTML ELEMENT
@@ -90,7 +80,8 @@ const addDetailsEventListener = () => {
 
 const modalDisplayFunction = () => {
     var modal = document.getElementById("popup");
-    var btn = document.getElementById("detailsButton");
+    // CHANGE var btn ELEMENT ID TO YOUR DETAILS BUTTON ID, delete comment
+    var btn = document.getElementById("detailsButton__eatery");
     var span = document.getElementsByClassName("close")[0];
 
     btn.onclick = function() {

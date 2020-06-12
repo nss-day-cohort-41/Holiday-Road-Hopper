@@ -6,8 +6,6 @@ function eateryConverter(eateryObject) {
 return eateryHTMLRepresentation
 }
 
-// value="${eateryCollection[id -1]}"
-
 // CONVERTS HTML TEXT INTO PREVIEW BOX
 
 function eateryPreviewConverter(eateryCollection, id) {
@@ -17,7 +15,7 @@ function eateryPreviewConverter(eateryCollection, id) {
             <p>${object.city}, ${object.state}</p>
             <img class="icon" src="images/eatery-pin.png" alt="eatery_img">
             <div class="buttonBox">
-                <button id="detailsButton" value="${object.id}">Restaurant Details</button>
+                <button id="detailsButton__eatery" value="${object.id}">Restaurant Details</button>
             </div>`
             console.log('EATERY HTML', previewHTML)
             return previewHTML
@@ -27,6 +25,7 @@ function eateryPreviewConverter(eateryCollection, id) {
 
 
 // DETAILS BUTTON OVERLAY
+// This is the modal popup that will display when you click the details button
 
 const eateryDetailsConverter = (eateryCollection, eateryObject) => {
     for (object of eateryCollection) {
@@ -50,18 +49,3 @@ const eateryDetailsConverter = (eateryCollection, eateryObject) => {
         }
     }
 }
-
-
-// console.log('THE STUFF I WANT TO BE READ', eateryObject)
-//     const detailsHTML = `<div class="modal-content">
-//         <h2>${eateryObject.businessName}</h2>
-//         <span class="close">&times;</span>
-//         <div class="content">
-//             <p>Vegan lumbersexual pug, godard 8-bit sustainable four loko PBR&B 3 wolf moon copper mug edison bulb farm-to-table you probably haven't heard of them bicycle rights. Jean shorts cold-pressed tacos pabst raclette photo booth.</p>
-//         </div>
-//     </div>`
-//     console.log('THE STUFF THAT ACTUALLY APPEARS', detailsHTML)
-
-// return detailsHTML
-// }
-

@@ -4,7 +4,7 @@ const attractionsConverter = (attractions, id) => {
         <p>${attractions[id -1].city}, ${attractions[id -1].state}</p>
         <img class="icon" src="images/attraction-pin.png" alt="attraction_img">
         <div class="buttonBox">
-        <button id="detailsButton" onclick="toggleHiddenAttractions()">Tourist Trap Details</button>
+        <button id="detailsButton__attraction" onclick="toggleHiddenAttractions()">Tourist Trap Details</button>
         </div>
         <p class="attractionDetails hidden">${attractions[id -1].description}</p>`
 
