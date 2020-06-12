@@ -21,7 +21,7 @@ const parkFilter = () => {
 const parkFilterDisplayFunction = () => {
     var modal = document.getElementById("popup");
     // CHANGE var btn ELEMENT ID TO YOUR DETAILS BUTTON ID, delete comment
-    var btn = document.document.querySelector(".parks__Filter__Data");
+    var btn = document.querySelector(".parks__Filter__Data");
     var span = document.getElementsByClassName("close")[0];
 
   
