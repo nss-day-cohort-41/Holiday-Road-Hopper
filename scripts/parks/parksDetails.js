@@ -1,6 +1,6 @@
     const parkDetailsConverter = (object, city) => {
 
-    const eateryHTMLRepresentation = `<div class="modal-content">
+    const parkHTMLRepresentation = `<div class="modal-content">
             <span class="close">&times;</span>
             <h4>${object.fullName}</h4>
             <div class="content">
@@ -15,5 +15,5 @@
             </div>
         </div>`
           
-            return eateryHTMLRepresentation
+            return parkHTMLRepresentation
  }

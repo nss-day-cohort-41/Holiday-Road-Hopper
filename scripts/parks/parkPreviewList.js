@@ -17,7 +17,7 @@ parkPreviewList = (parkData, city) => {
 const parkDetails = (parkData, city) => {
     const park_detailsTarget = document.getElementById("detailsButton__park")
 
-    const parkHTMListPreview = parkDetailsHTML(parkData, city)
+    
     park_detailsTarget.addEventListener("click", clickEvent => {
         
         const detailsHTML = parkDetailsConverter(parkData, city)

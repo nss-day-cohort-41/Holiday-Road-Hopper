@@ -48,6 +48,7 @@ const myUserInputSearch = (API) => {
                     myParkList(dataCollection);
                     actionAddingPark(dataCollection, API);
                     parkData = [];
+                    
 
                 })
 
