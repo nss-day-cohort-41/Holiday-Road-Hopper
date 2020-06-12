@@ -68,6 +68,7 @@ const detailsDisplay = () => {
 }
 
 
+
 // EVENT LISTENER FOR DETAILS BUTTON CLICK
 const addDetailsEventListener = () => {
     const detailsTarget = document.getElementById("detailsButton__eatery")
