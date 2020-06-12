@@ -53,3 +53,9 @@
   color: white;
   width: 50%;
 }
+
+.amenety,
+.amenety2 {
+  height: 50px;
+  width: 50px;
+}

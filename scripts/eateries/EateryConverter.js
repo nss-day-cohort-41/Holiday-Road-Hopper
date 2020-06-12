@@ -17,8 +17,7 @@ function eateryPreviewConverter(eateryCollection, id) {
             <div class="buttonBox">
                 <button id="detailsButton__eatery" value="${object.id}">Restaurant Details</button>
             </div>`
-            console.log('EATERY HTML', previewHTML)
-            return previewHTML
+        return previewHTML
         }
     }
 }
@@ -41,11 +40,12 @@ const eateryDetailsConverter = (eateryCollection, eateryObject) => {
                     <dd>${object.state}</dd>
                     <dt>Description</dt>
                     <dd>${object.description}</dd>
+                    <dt>Amenities</dt>
+                    <dd class="amenetyConverter"><img class="amenety" src="${object.icon1}"><img class="amenety2" src="${object.icon2}"><img class="amenety" src="${object.icon3}"><img class="amenety" src="${object.icon4}"><img class="amenety" src="${object.icon5}"><img class="amenety" src="${object.icon6}"></dd>
                 </dl>
             </div>
         </div>`
-            console.log('EATERY DETAILS', eateryHTMLRepresentation)
-            return eateryHTMLRepresentation
+        return eateryHTMLRepresentation
         }
     }
 }
