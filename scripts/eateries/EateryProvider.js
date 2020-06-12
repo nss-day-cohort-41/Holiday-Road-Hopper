@@ -16,13 +16,83 @@ const getEateryData = () => {
     )
 }
 
+let amenetyIcons = document.querySelector('.amenetyConverter');
 
-const stateFilter = () => {
-    const selectedState = []
-    for (const obj of eateryCollection) {
-        if (obj.state === $("#stateSelect option:selected")) {
-            selectedState.push(obj)
-        } 
+const wheelchairAmenety = () => {
+    const listedAmenities = []
+    for (const key of eateryCollection) {
+        if (key.ameneties.wheelchairAccessible === true) {
+            key.icon1 = "images/wheelchair-icon.jpg"
+            listedAmenities.push(key)
+        } else {
+            key.icon1 = "images/blank.png"
+        }
     }
-    return selectedState
+    return listedAmenities
 }
+
+const petAmenety = () => {
+    const listedAmenities = []
+    for (const key of eateryCollection) {
+        if (key.ameneties.petFriendly === true) {
+            key.icon2 = "images/pet-icon.png"
+            listedAmenities.push(key)
+        } else {
+            key.icon2 = "images/blank.png"
+        }
+    }
+    return listedAmenities
+}
+
+const wifiAmenety = () => {
+    const listedAmenities = []
+    for (const key of eateryCollection) {
+        if (key.ameneties.wifi === true) {
+            key.icon3 = "images/wifi-icon.png"
+            listedAmenities.push(key)
+        } else {
+            key.icon3 = "images/blank.png"
+        }
+    }
+    return listedAmenities
+}
+
+const diaperAmenety = () => {
+    const listedAmenities = []
+    for (const key of eateryCollection) {
+        if (key.ameneties.diaperFacility === true) {
+            key.icon4 = "images/diaper-icon.png"
+            listedAmenities.push(key)
+        } else {
+            key.icon4 = "images/blank.png"
+        }
+    }
+    return listedAmenities
+}
+
+const playgroundAmenety = () => {
+    const listedAmenities = []
+    for (const key of eateryCollection) {
+        if (key.ameneties.playground === true) {
+            key.icon5 = "images/playground-icon.png"
+            listedAmenities.push(key)
+        } else {
+            key.icon5 = "images/blank.png"
+        }
+    }
+    return listedAmenities
+}
+
+const restroomAmenety = () => {
+    const listedAmenities = []
+    for (const key of eateryCollection) {
+        if (key.ameneties.restrooms === true) {
+            key.icon6 = "images/restroom-icon.png"
+            listedAmenities.push(key)
+        } else {
+            key.icon6 = "images/blank.png"
+        }
+    }
+    return listedAmenities
+}
+

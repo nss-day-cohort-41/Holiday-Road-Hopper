@@ -51,17 +51,25 @@ contentTarget.addEventListener("change", clickEvent => {
     }
 )
 
+const detailsDisplay = () => {
+    const wheelchair = wheelchairAmenety();
+    const pet = petAmenety();
+    const wifi = wifiAmenety();
+    const diaper = diaperAmenety();
+    const playground = playgroundAmenety();
+    const restroom = restroomAmenety();
 
+    addDetailsEventListener(wheelchair)
+    addDetailsEventListener(pet)
+    addDetailsEventListener(wifi)
+    addDetailsEventListener(diaper)
+    addDetailsEventListener(playground)
+    addDetailsEventListener(restroom)
+}
 
 
 // EVENT LISTENER FOR DETAILS BUTTON CLICK
 const addDetailsEventListener = () => {
-    // getElementById on line 65 & 85 to appropride ID below:
-    // detailsButton__park,
-    // detailsButton__attraction,
-    // detailsButton__eatery
-
-    // delete lines 59 thru 64 after changing
     const detailsTarget = document.getElementById("detailsButton__eatery")
     detailsTarget.addEventListener("click", clickEvent => {
         const eateryObject = parseInt(clickEvent.target.value)  
@@ -80,13 +88,11 @@ const addDetailsEventListener = () => {
 
 const modalDisplayFunction = () => {
     var modal = document.getElementById("popup");
-    // CHANGE var btn ELEMENT ID TO YOUR DETAILS BUTTON ID, delete comment
     var btn = document.getElementById("detailsButton__eatery");
     var span = document.getElementsByClassName("close")[0];
 
     btn.onclick = function() {
     modal.style.display = "block";
-    console.log('button clicked')
     }
     span.onclick = function() {
     modal.style.display = "none";
