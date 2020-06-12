@@ -2,7 +2,7 @@ const renderAttractions = () => {
     const attractionsHTML = attractionsConverter(attractions)
     const attractionsArticleElement = document.querySelector(".block__attraction")
     attractionsArticleElement.innerHTML = attractionsHTML
-    }
+}
 
 const renderAttractionsDropdown = () => {
     for (const currentAttractionDropdown of attractions) {
