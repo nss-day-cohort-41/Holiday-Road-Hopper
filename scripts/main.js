@@ -4,6 +4,7 @@
 getEateryData().then(
     () => {
         eateryList()
+        // eateryDisplay()
     }
 )
 

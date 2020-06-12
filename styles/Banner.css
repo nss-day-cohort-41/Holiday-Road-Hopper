@@ -1,8 +1,12 @@
-.banner__cover {
-    background-size: cover;
-    background-position: center;
+.banner {
     height: 300px;
-    width: 1850px;    
+}
+
+.banner__cover {
+    object-fit: cover;   
+    height: 300px;
+    width: 100%;
+    overflow: hidden;   
 }
 
 .banner__images {
@@ -12,12 +16,12 @@
 .banner__logo {
     position: absolute;
     display: block;
-    top: 64px;
-    width: 100%;
+    top: 30px;
+    width: 100%
 }
 
-.martins_logo {
-    height: 200px;
+.logo {
+    height: 250px;
     width: auto;
 }
 
