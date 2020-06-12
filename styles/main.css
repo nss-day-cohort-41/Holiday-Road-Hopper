@@ -1,35 +1,86 @@
 @import "Banner.css";
+@import "DetailsOverlay.css";
 @import "Dropdown.css";
 @import "PreviewBox.css";
 @import "SavedAside.css";
 @import "weather.css";
-@import "overlay.css";
+@import "weather-icons.css";
+@import "weather-icons-wind.css";
+@import "weather-icons-wind.min.css";
+@import "weather-icons.min.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+/* COLOR PALETTE
+#89B9E3   Sky Blue
+#586128   Dark Olive Green
+#CEDBE7   Light Steel Blue
+#2B3424   Dark Slate Gray
+#7299C3   Steel Blue
+*/
+
+* {
+    font-family: 'Special Elite', cursive;
+}
+
+body {
+    background-color: white;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
 .container {
     display: flex;
     flex-direction: column;
-    border: 1px black dashed;
+    align-items: center;
 }
 
 .underBanner {
     display: flex;
     flex-direction: row;
-    border: 1px black dashed;
+    background-color: white;
+    width: 90%;
 }
 
 .underBanner__left {
     display: flex;
     flex-direction: column;
     flex: 3.5;
-    align-items: center;
-    border: 1px black dashed;
 }
 
 .underBanner__right {
     flex: 1;
-    border: 1px black dashed;
     width: 25%;
 }
 
 .hidden {
     display: none;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer > p {
+    color: white;
+}
+
+h4 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
 }

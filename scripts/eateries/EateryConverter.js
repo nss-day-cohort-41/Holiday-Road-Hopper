@@ -6,35 +6,46 @@ function eateryConverter(eateryObject) {
 return eateryHTMLRepresentation
 }
 
-
-
 // CONVERTS HTML TEXT INTO PREVIEW BOX
 
 function eateryPreviewConverter(eateryCollection, id) {
-    const eateryHTMLRepresentation = `<h2>${eateryCollection[id -1].businessName}</h2>
-    <div class="buttonBox">
-	    <button class="details">Park Details</button>
-    </div>
-    <img class="icon" src="" alt="">`
-
-return eateryHTMLRepresentation
+    for (object of eateryCollection) {
+        if (object.id === id) {
+            const previewHTML = `<h2 class="previewName">${object.businessName}</h2>
+            <p>${object.city}, ${object.state}</p>
+            <img class="icon" src="images/eatery-pin.png" alt="eatery_img">
+            <div class="buttonBox">
+                <button id="detailsButton__eatery" value="${object.id}">Restaurant Details</button>
+            </div>`
+            console.log('EATERY HTML', previewHTML)
+            return previewHTML
+        }
+    }
 }
 
 
 // DETAILS BUTTON OVERLAY
+// This is the modal popup that will display when you click the details button
 
-function detailsOverlay(eateryCollection, id) {
-    const detailsHTML = `
-    <div class="popup__content">
-        <h2>${eateryCollection[id -1].businessName}</h2>
-        <span class="close">&times;</span>
-        <div class="content">
-            <p>Vegan lumbersexual pug, godard 8-bit sustainable four loko PBR&B 3 wolf moon copper mug edison bulb farm-to-table you probably haven't heard of them bicycle rights. Jean shorts cold-pressed tacos pabst raclette photo booth. Bespoke aesthetic yr, YOLO truffaut selvage plaid semiotics polaroid blue bottle williamsburg enamel pin paleo iceland drinking vinegar. Photo booth jianbing fam, etsy gentrify pour-over whatever af readymade kombucha vape twee echo park. Copper mug live-edge helvetica, iceland raw denim pour-over cardigan cray four loko vinyl trust fund gastropub jean shorts intelligentsia butcher.</p>
-        </div>
-    </div>`
-
-return detailsHTML
+const eateryDetailsConverter = (eateryCollection, eateryObject) => {
+    for (object of eateryCollection) {
+        if (object.id === eateryObject) {
+            const eateryHTMLRepresentation = `<div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>${object.businessName}</h4>
+            <div class="content">
+                <dl>
+                    <dt>City</dt>
+                    <dd>${object.city}</dd>
+                    <dt>State</dt>
+                    <dd>${object.state}</dd>
+                    <dt>Description</dt>
+                    <dd>${object.description}</dd>
+                </dl>
+            </div>
+        </div>`
+            console.log('EATERY DETAILS', eateryHTMLRepresentation)
+            return eateryHTMLRepresentation
+        }
+    }
 }
-
-/* <button class="details" type="button">Details</button> */
-
