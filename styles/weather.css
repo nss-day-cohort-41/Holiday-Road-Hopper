@@ -7,18 +7,28 @@
 .weatherBox {
     display: flex;
     flex-flow: column;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     
 }
 
 .weatherBox__title {
-    border: 1px black solid;
+    /* border: 1px black solid; */
+}
+
+.weatherBox__title > h3 {
+    width: 50%;
+    text-align: left;
+    margin: 20px 0 0 0;
+    padding: 5px 10px;
+    border-radius: 0 18px 0 0;
 }
 
 .weatherBox__element {
     border: 1px black solid;
     display: flex;
     flex-flow: row;
+    justify-content: space-around;
+    border-radius: 0 18px 0 18px;
 }
 
 .weatherItem {
@@ -27,15 +37,14 @@
     border: 1px black solid;
     margin: .2rem;
     border-radius: 4px;
-    
+    border-radius: 0 18px 0 18px;
 }
 
 .weatherItem__data {
     display: flex;
     flex-flow: column;
     padding: .1rem;
-    width: 95%;
-
+    width: 95%;   
 }
 
 .weatherItem__data--element {

@@ -19,9 +19,11 @@
         <!-- POPUP CONTAINER END -->
 
         <header class="banner">
-            <img class="banner__cover" src="images/park-panorama.jpg">
-            <div class="banner__logo">
-                <img class="logo" src="" alt="">
+            <div class="banner__images"> 
+                <img class="banner__cover" src="images/park-panorama.jpg">
+                <div class="banner__logo">
+                    <img class="logo" src="images/roadtrip-logo.png" alt="Great American Road Trip_Logo">
+                </div>
             </div>
 
         </header>
@@ -30,116 +32,122 @@
             
 
             <div class="underBanner__left">
-
+                <h3>Choose Your Destinations</h3>
                 <article class="dropdownContainer">
                     <section class="dropdownBox">
-                        
+                        <h2>Find A Park</h2>
                         <section class="park_dropdownBox">
                             
                         </section>
-                             <button class="parks__UserInputSearch">Search</button>
-                             <button class="parks__Filter__Data">Filter</button>
-
+                        <div class="searchAndFilterButtons">
+                            <button class="parks__UserInputSearch">Search</button>
+                            <button class="parks__Filter__Data">Filter</button>
+                        </div>
                         </select>                        
                     </section>
-                    <section class="dropdownBox">
-                        <select class="bizarre__Dropdown dropdown__format">
-                            <option value="none" selected disabled>Select an attraction...</option>
-                        </select>
-                    </section>
-                    <section class="dropdownBox">
-
-                        <div class="state__dropdown">
-                            <select id="stateSelect" class="states">
-                                <option value="none" selected disabled>Filter by State...</option>
-                                <option value="AL">Alabama</option>
-                                <option value="AK">Alaska</option>
-                                <option value="AZ">Arizona</option>
-                                <option value="AR">Arkansas</option>
-                                <option value="CA">California</option>
-                                <option value="CO">Colorado</option>
-                                <option value="CT">Connecticut</option>
-                                <option value="DE">Delaware</option>
-                                <option value="DC">District Of Columbia</option>
-                                <option value="FL">Florida</option>
-                                <option value="GA">Georgia</option>
-                                <option value="HI">Hawaii</option>
-                                <option value="ID">Idaho</option>
-                                <option value="IL">Illinois</option>
-                                <option value="IN">Indiana</option>
-                                <option value="IA">Iowa</option>
-                                <option value="KS">Kansas</option>
-                                <option value="KY">Kentucky</option>
-                                <option value="LA">Louisiana</option>
-                                <option value="ME">Maine</option>
-                                <option value="MD">Maryland</option>
-                                <option value="MA">Massachusetts</option>
-                                <option value="MI">Michigan</option>
-                                <option value="MN">Minnesota</option>
-                                <option value="MS">Mississippi</option>
-                                <option value="MO">Missouri</option>
-                                <option value="MT">Montana</option>
-                                <option value="NE">Nebraska</option>
-                                <option value="NV">Nevada</option>
-                                <option value="NH">New Hampshire</option>
-                                <option value="NJ">New Jersey</option>
-                                <option value="NM">New Mexico</option>
-                                <option value="NY">New York</option>
-                                <option value="NC">North Carolina</option>
-                                <option value="ND">North Dakota</option>
-                                <option value="OH">Ohio</option>
-                                <option value="OK">Oklahoma</option>
-                                <option value="OR">Oregon</option>
-                                <option value="PA">Pennsylvania</option>
-                                <option value="RI">Rhode Island</option>
-                                <option value="SC">South Carolina</option>
-                                <option value="SD">South Dakota</option>
-                                <option value="TN">Tennessee</option>
-                                <option value="TX">Texas</option>
-                                <option value="UT">Utah</option>
-                                <option value="VT">Vermont</option>
-                                <option value="VA">Virginia</option>
-                                <option value="WA">Washington</option>
-                                <option value="WV">West Virginia</option>
-                                <option value="WI">Wisconsin</option>
-                                <option value="WY">Wyoming</option>
+                    <section class="dropdownBox second">
+                        <div class="bizarres">
+                            <h2>See A Sight</h2>
+                            <select class="bizarre__Dropdown">
+                                <option value="none" selected disabled>Select an attraction...</option>
                             </select>
                         </div>
+                    </section>
+                    <section class="dropdownBox third">
+                        <div class="eateries">
+                            <h2>Grab A Bite</h2>
+                            <div class="state__dropdown">
+                                <select id="stateSelect" class="states">
+                                    <option value="none" selected disabled>Filter by State...</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
 
 
-                        <select class="eatery__Dropdown dropdown__format">
-                            <option value="none" selected disabled> 
-                                Select an Eatery... 
-                            </option> 
-                        </select>
+                            <select class="eatery__Dropdown">
+                                <option value="none" selected disabled> 
+                                    Select an Eatery... 
+                                </option> 
+                            </select>
+                        </div>
                     </section>
                     
                     
                 </article>
+                <div class="previewHeading">
+                    <h3>Your Great American Road Trip Itinerary</h3>
+                </div>
                 <article class="itineraryPreview">
                     <div class="previewWrapper">
                         <section class="itineraryPreview__block">
-                            <h2>Park Preview</h2>
+                            <!-- <h4>Select a Park</h4> -->
                             <div class="block__park">
                                 
-                                <img class="icon" src="" alt="">
                             </div>
                                 <div class ="buttonDetails__weather">
                                     <div class="block__weather"></div>
-                                    <button class="details" type="button">Details</button>
-                                    </div>
+                                    
                             
                         </section>
                         <section class="itineraryPreview__block">
                             <div class="block__attraction preview__block--element">
-                                <h2>Attraction Name</h2>
-                                <img class="icon" src="" alt="">
-                                <button class="details" type="button">Details</button>
+                                <h4>Select an Attraction</h4>
+                               
                             </div>
                         </section>
                         <section class="itineraryPreview__block">
                             <div class="eatery__block">
-                                <h2>Select an Eatery</h2>
+                                <h4>Select an Eatery</h4>
                             </div>
                         </section>
                     </div>
@@ -162,15 +170,18 @@
                 </article>
             </div>
             <div class="underBanner__right">
-                <aside class="savedItineraries">
+                <h3>Your Itineraries</h3>
+                <section class="savedContainer">
+                    <aside class="savedItineraries">
+                        <div class="savedItineraries__display">
+                            <h5>Saved Itinerary</h5>
+                            <div class="display--savedPark">Park Name</div>
+                            <div class="display--savedBizarre">Attraction Name</div>
+                            <div class="display--savedEatery">Eatery Name</div>
+                        </div>
 
-                    <div class="savedItineraries__display">
-                        <div class="display--savedPark">Test</div>
-                        <div class="display--savedBizarre">Test</div>
-                        <div class="display--savedEatery">Test</div>
-                    </div>
-
-                </aside>
+                    </aside>
+                </section>
             </div>
         </div>
 

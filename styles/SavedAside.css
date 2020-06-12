@@ -1,0 +1,67 @@
+h3 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 20px 40% 0 40px;
+    height: auto;
+    width: auto;
+    background-color: #2B3424;
+    padding: 5px 20px;
+    border-radius: 0px 18px 0 0;
+}
+
+.savedContainer {
+    margin: 0 20px 0 40px;
+    width: auto;
+    /* background-color: grey; */
+    border: 2px solid black;
+    height: 80%;
+    padding: 20px 0;
+    border-radius: 0 18px 0 18px;
+}
+
+
+h5 {
+    font-family: 'Bangers', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.savedItineraries > h2 {
+    font-family: sans-serif;
+    color: white;
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center
+
+}
+
+.savedItineraries__display {
+    margin: 20px;
+    color: black;
+    border: 2px black solid;
+    font-family: sans-serif;
+}
+
+.display--savedPark, 
+.display--savedBizarre, 
+.display--savedEatery {
+    padding: 10px;
+}
+
+.display--savedPark {
+    background-color: #CEDBE7;
+}
+
+.display--savedBizarre {
+    background-color: #7299C3;
+}
+
+.display--savedEatery {
+    background-color: #2B3424;
+    color: white;
+}
