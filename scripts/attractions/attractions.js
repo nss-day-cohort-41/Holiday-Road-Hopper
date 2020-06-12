@@ -1,6 +1,6 @@
 const attractionsConverter = (attractions, id) => {
     const attractionsHTMLRepresentation =
-        `<h2 class="previewName">${attractions[id -1].name}</h2>
+        `<h2 class="previewName" id="attractionPreview">${attractions[id -1].name}</h2>
         <p>${attractions[id -1].city}, ${attractions[id -1].state}</p>
         <img class="icon" src="images/attraction-pin.png" alt="attraction_img">
         <div class="buttonBox">

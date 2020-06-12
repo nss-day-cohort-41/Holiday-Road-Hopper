@@ -11,7 +11,7 @@ return eateryHTMLRepresentation
 function eateryPreviewConverter(eateryCollection, id) {
     for (object of eateryCollection) {
         if (object.id === id) {
-            const previewHTML = `<h2 class="previewName">${object.businessName}</h2>
+            const previewHTML = `<h2 class="previewName" id="eateryPreview">${object.businessName}</h2>
             <p>${object.city}, ${object.state}</p>
             <img class="icon" src="images/eatery-pin.png" alt="eatery_img">
             <div class="buttonBox">

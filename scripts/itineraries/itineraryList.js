@@ -1,5 +1,7 @@
 
 
+
+
 // FUNCTION THAT STORES PREVIEW ITEMS INTO STRING ARRAY
 const threeDestinations =[]
 

@@ -12,4 +12,4 @@ const localAPI = {
     }
 }
 
-export default API
+export default localAPI
