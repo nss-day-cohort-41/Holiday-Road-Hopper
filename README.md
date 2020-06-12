@@ -2,7 +2,7 @@
 
 Team Hopper (named after Grace Hopper, a pioneer in programming) was tasked with creating an app to help users build an itenerary for their perfect vacation following the criteria below.
 
-Concepts covered in this project including using apis to fetch data from external databases and displaying that data in a way that is useful for the user.
+Concepts covered in this project include using APIs to fetch data from external databases and displaying that data in a way that is useful for the user.
 
 ![The Great American Road Trip](https://i.imgur.com/VDtJZmO.pngg)
 
