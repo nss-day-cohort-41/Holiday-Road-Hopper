@@ -2,69 +2,37 @@
 //a park in the select element
 //want the information from that park to be passed to addingpark html
 //want that function to also display the park in its assigned container
+// this function collects that data array from the fetch call on parkPreview
+// this data is already the selected data
 
-const actionAddingPark = (API) => {
+const actionAddingPark = (dataCollection, API) => {
     let myParkArray = [];
     //below is a event listener for the user selecting an option
     document.querySelector(".dropDownBoxParks").addEventListener("click", event => {
-        // .option__parks
-        // let selectedPark = [] 
         let selectedPark = document.querySelector(".dropDownBoxParks").value
-        //    let selectedPark = document.querySelector(".option__parks").value
-       
-        // 
-        console.log(selectedPark)
+        let selectedParkData;
         
-            const getParkData = () => {
-                return fetch(`https://developer.nps.gov/api/v1/parks?parkCode=${selectedPark}&api_key=${API.npsKey}`).then(
-                    (httpResponse) => {
-                        return httpResponse.json()
-                    }
-                )
-                    .then(
-                        (arrayOfPark) => {
-
-                            let localArrayofParks = []
-                            localArrayofParks = arrayOfPark.data
-
-                            //has to loop to pull data forward in the array to be access using .fullName
-                            for (let park = 0; park < localArrayofParks.length; park++) {
-
-                                // adding if statement that checks the state
-
-                                myParkArray.push(localArrayofParks[park])
-                                // parkData.push(localArrayofParks[park].states)
-                            }
-                            // console.log(parkData)
-
-                            return myParkArray
-                            // // console.log(arrayOfPark.data)
-                            // myParkArray = []
-                            // // // 100 percent sure the data is back
-                            // myParkArray.push(arrayOfPark.data)
-                            //  console.log(myParkArray)
-
-
-                        }
-                    ).then((arrayCollectionOfPark) => {
-
-                        let singleParkData = [];
-                        singleParkData = arrayCollectionOfPark[0]
-                        // console.log(singleParkData.fullName)
-                        parkPreviewList(singleParkData)
-                        //s===========================
-                        //singleParkData.longLat gives long and latitudes
-                        //pass singleParkData
-                        //singleParkData is ready to have a key put to it example singleParkData.key
-                        getWeather.fetchWeatherData(parkWeatherData.linkGenerator(singleParkData, API))
-                        //details
-
-                        myParkArray = [];
-                    })
-            }
-
         if (selectedPark !== "none") {
-    getParkData();}
-    })
 
-}
+            //this for looped is used to go through each item in the array of dataCOllection
+            //slectedPark has a parkCode value
+            //here we want to look in each obejct array and see if it has a value parkcode
+            //and does this park code matches up with the object that was seleted if so pass this object locatied in array at spot i
+
+            for (let i = 0; i < dataCollection.length; i++) {
+
+                if (dataCollection[i].parkCode == selectedPark) {
+
+                    selectedParkData = dataCollection[i]
+
+                    parkPreviewList(selectedParkData)
+
+                    getWeather.fetchWeatherData(parkWeatherData.linkGenerator(selectedParkData, API))
+
+                    myParkArray = [];
+
+                }
+            }
+        }
+    })
+}  

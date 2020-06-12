@@ -7,7 +7,7 @@
 
 parkPreviewList = (parkData) => {
 
-    parkPreviewLocation = document.querySelector(".block__park")
+    let parkPreviewLocation = document.querySelector(".block__park")
     parkPreviewLocation.innerHTML = ""
 
     const parkHTMListPreview = parkDetailsHTML(parkData)
