@@ -6,8 +6,6 @@ const parkWeatherData = {
 
          let weatherLink = `https://api.openweathermap.org/data/2.5/forecast?lat=${locationData.latitude}&lon=${locationData.longitude}&units=imperial&appid=${apiData.weatherKey}`
 
-
-
         return weatherLink
     }
 }

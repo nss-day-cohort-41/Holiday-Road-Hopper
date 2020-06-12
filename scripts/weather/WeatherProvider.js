@@ -3,7 +3,6 @@
 let fiveDayForecast = [];
 
 
-
 //request inside an object
 const getWeather =  {
     fetchWeatherData (weatherData) {
