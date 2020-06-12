@@ -1,19 +1,17 @@
-
-
-
 //locate
 //convert
 //add to location
 
-parkPreviewList = (parkData) => {
+parkPreviewList = (parkData, city) => {
 
     parkPreviewLocation = document.querySelector(".block__park")
     parkPreviewLocation.innerHTML = ""
 
-    const parkHTMListPreview = parkDetailsHTML(parkData)
-
+    const parkHTMListPreview = parkDetailsHTML(parkData, city)
+    
     parkPreviewLocation.innerHTML = parkHTMListPreview
 }
+
 
 
 const parkDetails = (parkData, city) => {
@@ -29,6 +27,8 @@ const parkDetails = (parkData, city) => {
         }
     )
 }
+
+
 const parkDisplayFunction = () => {
     var modal = document.getElementById("popup");
     // CHANGE var btn ELEMENT ID TO YOUR DETAILS BUTTON ID, delete comment
