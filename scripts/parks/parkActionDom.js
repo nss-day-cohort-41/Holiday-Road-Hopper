@@ -25,8 +25,19 @@ const actionAddingPark = (dataCollection, API) => {
 
                     selectedParkData = dataCollection[i]
 
-                    parkPreviewList(selectedParkData)
-
+                    let userCity = [];
+                    userCity.push(selectedParkData.addresses[0])
+                    
+                    
+                    let selectedCity = []
+                    for(let j = 0; j < userCity.length; j++) {
+                       console.log("gavinplease",userCity[j].city)
+                       selectedCity.push(userCity[j].city)
+                    }
+                   
+``
+                    parkPreviewList(selectedParkData, selectedCity)
+                    //passing selectedParkData into weather 
                     getWeather.fetchWeatherData(parkWeatherData.linkGenerator(selectedParkData, API))
 
                     myParkArray = [];

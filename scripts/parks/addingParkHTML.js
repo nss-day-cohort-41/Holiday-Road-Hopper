@@ -5,19 +5,15 @@
 
 
 
-const parkDetailsHTML = (selectedData) => {
+const parkDetailsHTML = (selectedData, city) => {
     const parkDetails = `<h2 class="previewName">${selectedData.fullName}</h4> 
-    <p>${selectedData.city}, ${selectedData.state}</p>
+    <p>${city}, ${selectedData.states}</p>
             <img class="icon" src="images/park-pin.png" alt="eatery_img">
             <div class="buttonBox">
-                <button id="detailsButton">Park Details</button>
+                <button id="detailsButton__park">Park Details</button>
             </div>`
 
     return parkDetails
 }
 
 
-{/* <h4>${selectedData.fullName}</h4> 
-    <ol class="parkDeatilsList">
-    <li class="parkDeatilsListItem park__designation">${selectedData.description}</li>
-    </ol> */}
