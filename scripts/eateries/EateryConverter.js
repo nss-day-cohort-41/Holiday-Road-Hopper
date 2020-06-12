@@ -9,8 +9,10 @@ return eateryHTMLRepresentation
 // CONVERTS HTML TEXT INTO PREVIEW BOX
 
 function eateryPreviewConverter(eateryCollection, id) {
+
     for (object of eateryCollection) {
         if (object.id === id) {
+            eateryPreview = object.businessName
             const previewHTML = `<h2 class="previewName" id="eateryPreview">${object.businessName}</h2>
             <p>${object.city}, ${object.state}</p>
             <img class="icon" src="images/eatery-pin.png" alt="eatery_img">

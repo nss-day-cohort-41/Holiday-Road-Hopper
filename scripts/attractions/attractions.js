@@ -1,4 +1,5 @@
 const attractionsConverter = (attractions, id) => {
+    attractionPreview = attractions[id-1].name
     const attractionsHTMLRepresentation =
         `<h2 class="previewName" id="attractionPreview">${attractions[id -1].name}</h2>
         <p>${attractions[id -1].city}, ${attractions[id -1].state}</p>

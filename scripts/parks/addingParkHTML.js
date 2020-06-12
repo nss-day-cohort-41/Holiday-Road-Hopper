@@ -6,6 +6,7 @@
 
 
 const parkDetailsHTML = (selectedData, city) => {
+    parkPreview = selectedData.fullName
     const parkDetails = `<h2 class="previewName" id="parkPreview">${selectedData.fullName}</h4> 
     <p>${city}, ${selectedData.states}</p>
             <img class="icon" src="images/park-pin.png" alt="eatery_img">
