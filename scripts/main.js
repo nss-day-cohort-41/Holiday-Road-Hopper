@@ -4,14 +4,14 @@
 getEateryData().then(
     () => {
         eateryList()
-        detailsDisplay()
+        // eateryDisplay()
     }
 )
 
 
  userInputParks();
  myUserInputSearch(API);
- parkFilter();
+
 
 
 
