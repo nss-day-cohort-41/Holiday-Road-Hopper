@@ -10,9 +10,7 @@ let parkNames = []
 // the below function deals with collecting data from user inputs and 
 // using that information to gather data from the NPS API
 
-
 const myUserInputSearch = (API) => {
-
 
     document.querySelector(".parks__UserInputSearch").addEventListener("click", event => {
         /*
@@ -24,8 +22,6 @@ const myUserInputSearch = (API) => {
 
         userSearchParks = parksSearchString;
         userState = parksState;
-
-       
 
         const getLocationData = () => {
             return fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${userState}&q=${userSearchParks}&api_key=${API.npsKey}`).then(
@@ -39,33 +35,27 @@ const myUserInputSearch = (API) => {
                         let localArrayofParks = []
                         localArrayofParks = arrayOfNPS.data
                         for (let park = 0; park < localArrayofParks.length; park++) {
-
-                            // adding if statement that checks the state
-                            
                                 parkData.push(localArrayofParks[park])
-                            // parkData.push(localArrayofParks[park].states)
                         }
-                        console.log(parkData)
                         return parkData
-
                     }
                 ).then((dataCollection) => {
+                    //calling functions here so i can pass dataCollection
+                    //here datacollection is an array holding objects that were selected by the user
+                
                     clearDataConverter()
                     userInputParks();
                     myParkList(dataCollection);
+                    actionAddingPark(dataCollection, API);
                     parkData = [];
-                    actionAddingPark(API);
+                    
 
                 })
 
         }
 
          getLocationData()
-
-
     })
-
-
 }
 
 
